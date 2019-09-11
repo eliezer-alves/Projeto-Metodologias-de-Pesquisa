@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo $titulo; ?></title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+      {% static 'css/style.css' %}
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css'">
+    <link rel="stylesheet" href="{% static 'css/style.min.css'">
+    <link rel="stylesheet" href="{% static 'css/custom.css'">
+
+    <!--[if lt IE 9]>
+      <script src="{% static 'js/vendor/html5shiv.min.js'"></script>
+      <script src="{% static 'js/vendor/respond.min.js'"></script>
+    <![endif]-->
+  </head>
+  <body>

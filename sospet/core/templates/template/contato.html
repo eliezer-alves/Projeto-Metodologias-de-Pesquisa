@@ -1,0 +1,88 @@
+
+  <section class="probootstrap-slider flexslider probootstrap-inner">
+    <ul class="slides">
+       <li style="background-image: url(<?php echo base_url(); ?>assets/img/slider_1.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate"><?php echo $tema ?></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap">Ostentação é ter o passaporte cheio de carimbos. Entre em contato conosco agora mesmo e escolha seu destino!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+  
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row probootstrap-gutter60">
+        <div class="col-md-8">
+          <h2 class="mt0">Formulário de Contato</h2>
+          <form action="<?php echo base_url();?>pagina/enviar_email_contato" method="post" class="probootstrap-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="fname">Primeiro Nome</label>
+                  <input type="text" class="form-control" id="fname" name="fname" id="fname" required="true" onchange="validar_nom('fname')">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lname">Último Name</label>
+                  <input type="text" class="form-control" id="lname" name="lname" id="lname" required="true" onchange="validar_nom('lname')">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" id="email" required="true" onchange="validar_email('email')">
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" class="form-control" id="assunto" name="assunto" id="assunto" required="true" onchange="validar_ass('assunto')">
+            </div>
+            <div class="form-group">
+              <label for="message">Menssagem</label>
+              <textarea cols="30" rows="10" class="form-control" name="message" id="message" required="true"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Mandar Mensagem">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h2 class="mt0">Entre em Contato Conosco</h2>
+          <ul class="probootstrap-contact-info">
+            <li><i class="icon-location2"></i> <span>Rua Sete, 798 - Parque da Colina</span></li>
+            <li><i class="icon-mail"></i><span>atendimento@invictaweb.com.br</span></li>
+            <li><i class="icon-phone2"></i><span>(35) 9 9218 - 8006</span></li>
+          </ul>
+          <h2>Comentários</h2>
+          <p>Maldivas: O itinerário é simples, saindo do Brasil, você desembarcará no aeroporto internacional do Panamá, de lá, pega um táxi até o aeroporto de Albrook onde embarca em um vôo direto até o arquipélago de Bocas Del Toro. Simplesmente incrível</p>
+          <p><a href="#" class="btn btn-primary" role="button">Mandar Mensagem</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="probootstrap-half">
+    <div class="image" style="background-image: url(<?php echo base_url(); ?>assets/img/slider_3.jpg);"></div>
+    <div class="text">
+      <div class="probootstrap-animate fadeInUp probootstrap-animated">
+        <h2 class="mt0">Melhor Hotel 5 estrelas</h2>
+        <p><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator" alt="Free HTML5 Bootstrap Template"></p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Pesquise a rede de hotel de sua preferência e encontre um quarto de hotel que seja perfeito para você. Encontre desde hotéis all inclusive em Portugal até hotéis baratos para hospedagens em grandes eventos e que oferecem economia!</p>
+          </div>
+          <div class="col-md-6"><p>Use os nossos mapas para encontrar e reservar uma hospedagem nos melhores hotéis, seja de frente para o mar, em um resort ou pousada e ainda, em um destino montanhoso. Temos hotéis fazenda e chalés. Compare os seguintes benefícios antes de sua reserva.</p>        
+          </div>
+        </div>
+        <p><a href="#" class="link-with-icon white">Ler Mais <i class=" icon-chevron-right"></i></a></p>
+      </div>
+    </div>
+  </section>

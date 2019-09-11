@@ -1,0 +1,293 @@
+  <section class="probootstrap-slider flexslider">
+    <ul class="slides">
+       <li style="background-image: url(<?php echo base_url(); ?>assets/img/slider_1.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate"><?php echo $tema; ?></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap"><?php echo $sub_tema; ?></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(<?php echo base_url(); ?>assets/img/slider_2.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate"><?php echo $tema2; ?></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap"><?php echo $sub_tema2; ?></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </li>
+    </ul>
+  </section>
+
+  <section class="probootstrap-cta probootstrap-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="probootstrap-cta-heading">Resrve um quarto para a sua família <span> &mdash; Aproveite os pacotes promocionais exclusivos.</span></h2>
+          <div class="probootstrap-cta-button-wrap"><a href="<?php echo base_url();?>reservas" class="btn btn-primary">Reserve agora</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row mb30">
+        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+          <h2>Explore Nossos Serviços</h2>
+          <p class="lead">Viajar é colecionar memórias sobre o mundo. Não perca tempo, venha conhecer o que há de melhor no ramo turístico.</p>
+          <p><img src="<?php echo base_url(); ?>assets/img/curve.svg" class="svg" alt="Free HTML5 Bootstrap Template"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="<?php echo base_url(); ?>assets/img/flaticon/svg/001-building.svg" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
+            </div>
+            <div class="text">
+              <h3>Milhares de Quartos e Hotéis</h3>
+              <p>Seja para onde quer que você vá, pode se sentir em casa com a Atlantis. Confira centenas de hotéis e milhares de quartos em cada cantinho do globo!</p>
+              <p><a href="#" class="link-with-icon">Ler Mais <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="<?php echo base_url(); ?>assets/img/flaticon/svg/003-restaurant.svg" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
+            </div>
+            <div class="text">
+              <h3>Comidas &amp; Bebidas</h3>
+              <p>Viajar é experimentar coisas novas inclusive a culinária. Então confira o que preparamos para você em cada lugar que quiser estar!</p>
+              <p><a href="#" class="link-with-icon">Ler Mais <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="<?php echo base_url(); ?>assets/img/flaticon/svg/004-parking.svg" class="svg" alt="Free HTML5 Bootstrap Template by uicookies.com">
+            </div>
+            <div class="text">
+              <h3>Aeroporto Taxi</h3>
+              <p>Comodidade e segurança são sempre prioridades. Inclua em suas reservas um motorista para te levar a qualeur lugar quando quiser!</p>
+              <p><a href="#" class="link-with-icon">Ler Mais <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="probootstrap-section probootstrap-section-dark">
+    <div class="container">
+      <div class="row mb30">
+        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+          <h2>Nossos Quartos</h2>
+          <p class="lead">Bastam poucos cliques para você estar em uma dessas maravilhosa suites em qualquer parte do mundo. Confira o que preparamos exclusivamente para você!</p>
+          <p><img src="<?php echo base_url(); ?>assets/img/curve.svg" class="svg" alt="Free HTML5 Bootstrap Template"></p>
+        </div>
+      </div>
+      <div class="row probootstrap-gutter10">
+        <div class="col-md-6">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="<?php echo base_url(); ?>assets/img/img_1.jpg" class="image-popup">
+                <img src="<?php echo base_url(); ?>assets/img/img_1.jpg" alt="Free HTML5 Bootstrap Template by uicookies.com" class="img-responsive">
+              </a>
+              <div class="actions">
+                <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a>
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="<?php echo base_url(); ?>pagina/detalhes/img_1.jpg/Quarto Grand Deluxe">Quarto Grand Deluxe</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Avaliações</li>
+                  <li><i class="icon-user2"></i> 2 Pessoas</li>
+                </ul>
+              </div>
+              <p>Esta classe de suites oferece o que há de melhor nos quartos clássicos. Perfeito para quem quer descançar e aproveitar as férias.</p>
+              <p><a href="<?php echo base_url(); ?>pagina/reservas" class="btn btn-primary">Reserve agora por R$ 200.00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="<?php echo base_url(); ?>assets/img/img_2.jpg" class="image-popup">
+              <img src="<?php echo base_url(); ?>assets/img/img_2.jpg" alt="Free HTML5 Bootstrap Template by uicookies.com" class="img-responsive">
+              </a>
+              <div class="actions">
+                <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a>
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="<?php echo base_url(); ?>pagina/detalhes/img_2.jpg/Quarto&enbsp;Ultra&enbsp;Superior">Quarto Ultra Superior</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.8</span> <i class="icon-star"></i> 156 Avaliações</li>
+                  <li><i class="icon-user2"></i> 3 Pessoas</li>
+                </ul>
+              </div>
+              <p>O que há de melhor em qustão de comodidade, estilo e conforto é basicamente o que compõe essa classe de suites.</p>
+              <p><a href="<?php echo base_url(); ?>pagina/reservas" class="btn btn-primary">Reserve agora por R$ 109.00</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="probootstrap-section">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 probootstrap-relative">
+          <h3 class="mt0 mb30">Outros Quartos</h3>
+            <ul class="probootstrap-owl-navigation absolute right">
+              <li><a title="Anterior" href="#" class="probootstrap-owl-prev"><i class="icon-chevron-thin-left"></i></a></li>
+              <li><a title="Próximo" href="#" class="probootstrap-owl-next"><i class="icon-chevron-thin-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 probootstrap-relative">
+            <div class="owl-carousel owl-carousel-carousel">
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_1.jpg/Quarto Grand Deluxe"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Quarto Grand Deluxe</h3>
+                    <p>Aoartir de <strong>R$ 29.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.8</span> <i class="icon-star"></i> 463 Avaliações</li>
+                        <li><i class="icon-user2"></i> 3 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_2.jpg/Quarto Clássico"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Quarto Clássico</h3>
+                    <p>Apartir de <strong>R$ 32.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.5</span> <i class="icon-star"></i> 456 Avaliações</li>
+                        <li><i class="icon-user2"></i> 3 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_3.jpg/Suite Ultra Superior"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Suite Ultra Superior</h3>
+                    <p>Apartir de <strong>R$ 42.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Avaliações</li>
+                        <li><i class="icon-user2"></i> 4 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_4.jpg/Suite Lois"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Suite Lois</h3>
+                    <p>Apartir de <strong>R$ 89.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Avaliações</li>
+                        <li><i class="icon-user2"></i> 3 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_5.jpg/Suite Lovelace"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Suite Lovelace</h3>
+                    <p>Apartir de <strong>R$ 32.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 189 Avaliações</li>
+                        <li><i class="icon-user2"></i> 3 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_6.jpg/Suite Master"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Suite Master</h3>
+                    <p>Apartir de <strong>R$ 62.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.9</span> <i class="icon-star"></i> 152 Avaliações</li>
+                        <li><i class="icon-user2"></i> 2 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="probootstrap-room">
+                  <a title="Ver Detalhes" href="<?php echo base_url(); ?>pagina/detalhes/img_7.jpg/Quarto Magnifi"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/img_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+                  <div class="text">
+                    <h3>Quarto Magnifi</h3>
+                    <p>Apartir de <strong>R$ 42.00/Noite</strong></p>
+                    <div class="post-meta">
+                      <ul>
+                        <li><span class="review-rate">4.3</span> <i class="icon-star"></i> 397 Avaliações</li>
+                        <li><i class="icon-user2"></i> 4 Pessoas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="probootstrap-half">
+    <div class="image" style="background-image: url(<?php echo base_url(); ?>assets/img/slider_2.jpg);"></div>
+    <div class="text">
+      <div class="probootstrap-animate fadeInUp probootstrap-animated">
+        <h2 class="mt0">Melhor Hotel 5 estrelas</h2>
+        <p><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator" alt="Free HTML5 Bootstrap Template"></p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Pesquise a rede de hotel de sua preferência e encontre um quarto de hotel que seja perfeito para você. Encontre desde hotéis all inclusive em Portugal até hotéis baratos para hospedagens em grandes eventos e que oferecem economia!</p>
+          </div>
+          <div class="col-md-6"><p>Use os nossos mapas para encontrar e reservar uma hospedagem nos melhores hotéis, seja de frente para o mar, em um resort ou pousada e ainda, em um destino montanhoso. Temos hotéis fazenda e chalés. Compare os seguintes benefícios antes de sua reserva.</p>        
+          </div>
+        </div>
+        <p><a href="<?php echo base_url(); ?>pagina/sobre" class="link-with-icon white">Ler Mais <i class=" icon-chevron-right"></i></a></p>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,74 @@
+{% load staticfiles %}
+  <!-- START: header -->
+
+  <header role="banner" class="probootstrap-header"  style="background-color: #E6E6E6;">
+    <!-- <div class="container"> -->
+      <div class="row">
+        <a title="Bluesky" href="<?php echo base_url(); ?>home" class="probootstrap-logo visible-xs"><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/logo_sm.png" class="hires" width="120" height="33" alt="Free Bootstrap Template by uicookies.com"></a>
+
+        <a title="Menu" href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li {% if home %}class="active"{% endif %}><a title="Home" href="{% url 'index' %}" class="l_menu">Home</a></li>
+            <li {% if todos %}class="active"{% endif %}><a title="Todos Anúncios" href="{% url 'all_pets' %}" class="l_menu">Todos Anúncios</a></li>
+            <li {% if meus %}class="active"{% endif %}><a title="Meus Anúncios" href="{% url 'user_pets' %}" class="l_menu">Meus Anúncios</a></li>
+            <li class="hidden-xs probootstrap-logo-center"><a title="Alcateia" href="<?php echo base_url(); ?>"><img alt="A imagem não foi carregada corretamente." src="{% static 'img/logo.png' %}" class="hires" width="90" height="80" alt="Free Bootstrap Template by uicookies.com"></a></li>
+            <li {% if novo %}class="active"{% endif %}><a title="Fazer um Anúncio" href="{% url 'pet_register' %}" class="l_menu">Novo Anúncio</a></li>
+            <li {% if contato %}class="active"{% endif %}><a title="Fale Conosco" href="<?php echo base_url(); ?>blog" class="l_menu">Contato</a></li>
+            <li {% if logout %}class="active"{% endif %} ><a title="Sair" href="{% url 'logout' %}" class="l_menu">Logout</a></li>
+          </ul>
+          <div class="extra-text visible-xs">
+            <a title="Menu" href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>Conecte-se Conosco</h5>
+            <ul class="social-buttons">
+              <li><a title="Twiter" href=""><i class="icon-twitter"></i></a></li>
+              <li><a title="Facebook" href=""><i class="icon-facebook"></i></a></li>
+              <li><a title="Instagram" href=""><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- </div> -->
+    </header>
+  <!-- END: header -->
+
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #068;color: white;">
+      <a class="navbar-brand" href="#" style="color: white;">__L_O_G_O__</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}" style="color: white;">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'all_pets' %}" style="color: white;">Todos Anúncios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'user_pets' %}" style="color: white;">Meus Anúncios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pet_register' %}" style="color: white;">Novo Anúncio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"  style="color: white;" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  style="color: white;" href="{% url 'logout' %}">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+-->

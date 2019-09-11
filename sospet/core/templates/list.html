@@ -1,0 +1,33 @@
+{% extends 'base_layout.html' %}
+{% load staticfiles %}
+{% block content %}
+{% include 'menu.html' %}
+    <div class="container-fluid" style="background-color: #FAFAFA;">
+
+        <section class="probootstrap-section" style="width: 80%;margin-left:10%;background-color: white;">
+            <div class="container">
+                <div class="row">
+                    {% for pet in pets %}
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="probootstrap-room">
+                        <a  title="" href="{% url 'pet_detail' pet.id %}"><img class="card-img-top" src="{{ pet.photo.url }}" alt="Card image cap" style="width: 100%;height: 250px;"></a>
+                        <div class="text">
+                          <h3>{{ pet.city }}</h3>
+                          <p>{{ pet.description }}</p>
+                          <div class="post-meta mb30">
+                            <ul>
+                              <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Avaliações</li>
+                              <li><i class="icon-user2"></i> 2 Pessoas</li>
+                            </ul>
+                          </div>
+                          <p><a href="{% url 'pet_detail' pet.id %}" class="btn btn-primary">Ver Mais</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </div>
+<br><br>
+{% endblock %}

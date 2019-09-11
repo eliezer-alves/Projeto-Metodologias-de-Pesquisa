@@ -1,0 +1,35 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <br/>
+    <div class="fadeIn first">
+      <img src="https://image.flaticon.com/icons/png/512/21/21104.png" id="icon" alt="User Icon" />
+    </div>
+    <br/>
+
+    <!-- Login Form -->
+    <form action="submit" method="POST">{% csrf_token %}
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="pass">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    {% for message in messages %}
+      <div class="alert alert-danger" role="alert">
+        <strong>Error: </strong> {{ message }}
+      </div>
+    {% endfor %}
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

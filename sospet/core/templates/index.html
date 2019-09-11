@@ -1,0 +1,20 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+    {% include 'menu.html' %}
+
+    <div class="jumbotron" style="background-image: linear-gradient(white, #E6E6E6)">
+      <h1 class="display-4">Welcome!</h1>
+      <p class="lead">This is a foundation of dogs. We is here for help the dogs.</p>
+      <hr class="my-4">
+      <p>We want help the abandoned dogs. So we created this website because we belive in happy life of dogs.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+
+    {% block list %}
+    {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,145 @@
+
+  <section class="probootstrap-slider flexslider probootstrap-inner">
+    <ul class="slides">
+       <li style="background-image: url(<?php echo base_url(); ?>assets/img/slider_1.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator probootstrap-animate" alt="Free HTML5 Bootstrap Template"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate"><?php echo $tema ?></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap">As pessoas não fazem viagens, as viagens fazem as pessoas. Reserve agora e viva a vida!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+  
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row probootstrap-gutter40">
+        <div class="col-md-8">
+          <h2 class="mt0">Ficha de Reserva</h2>
+          <form action="pagina/enviar_email_reserva" method="post" class="probootstrap-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="fname">Primeiro Nome</label>
+                  <input type="text" class="form-control" id="fname" name="fname" required="true" onchange="validar_nom('fname')">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lname">Último Nome</label>
+                  <input type="text" class="form-control" id="lname" name="lname" required="true" onchange="validar_nom('lname')">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="form-field">
+                <i class="icon icon-mail"></i>
+                <input type="email" class="form-control" id="email" name="email" required="true" onchange="validar_email('email')">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="room">Quarto</label>
+              <div class="form-field">
+                <i class="icon icon-chevron-down"></i>
+                <select name="room" id="room" class="form-control" required="true" onchange="validar_select('room')">
+                  <option value="">Selecionar um Quarto</option>
+                  <option value="Classic">Classic</option>
+                  <option value="Ultra Superior">Ultra Superior</option>
+                  <option value="Grand Deluxe">Grand Deluxe</option>
+                  <option value="Suite Lois">Suite Lois</option>
+                  <option value="Suite Master">Suite Master</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="date-arrival">Chegada</label>
+                  <div class="form-field">
+                    <i class="icon icon-calendar2"></i>
+                    <input type="text" class="form-control" id="date-arrival" name="date-arrival" required="true" onchange="validar_ass('date-arrival')">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="date-departure">Partida</label>
+                  <div class="form-field">
+                    <i class="icon icon-calendar2"></i>
+                    <input type="text" class="form-control" id="date-departure" name="date-departure" required="true" onchange="validar_ass('date-departure')">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb30">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="adults">Adultos</label>
+                  <div class="form-field">
+                    <i class="icon icon-chevron-down"></i>
+                    <select name="adults" id="adults" class="form-control" required="true" onchange="validar_select('adults')">
+                      <option value="">Número de Adultos</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="children">Crianças</label>
+                  <div class="form-field">
+                    <i class="icon icon-chevron-down"></i>
+                    <select name="children" id="children" class="form-control" required="true" onchange="validar_select('children')">
+                      <option value="">Número de Crianças</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4+</option>
+                    </select>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Reserve">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h2 class="mt0">Comentários</h2>
+          <p>Fernando de Noronha é simplismente incível. Parece sonho, eu e meu marido passamos nossoa aniversário de casamento lá. O pessoal do hotel sempre cmuito atencioso e se preocupando com o nosso conforto. Foram 8 dias maravilhosos. Obrigada Atlantis!!!</p>
+          <p><a href="<?php echo base_url(); ?>contato" class="btn btn-primary" role="button">Mandar Mensagem</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="probootstrap-half">
+    <div class="image" style="background-image: url(<?php echo base_url(); ?>assets/img/slider_1.jpg);"></div>
+    <div class="text">
+      <div class="probootstrap-animate fadeInUp probootstrap-animated">
+        <h2 class="mt0">Melhor Hotel 5 estrelas</h2>
+        <p><img alt="A imagem não foi carregada corretamente." src="<?php echo base_url(); ?>assets/img/curve_white.svg" class="seperator" alt="Free HTML5 Bootstrap Template"></p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Pesquise a rede de hotel de sua preferência e encontre um quarto de hotel que seja perfeito para você. Encontre desde hotéis all inclusive em Portugal até hotéis baratos para hospedagens em grandes eventos e que oferecem economia!</p>
+          </div>
+          <div class="col-md-6"><p>Use os nossos mapas para encontrar e reservar uma hospedagem nos melhores hotéis, seja de frente para o mar, em um resort ou pousada e ainda, em um destino montanhoso. Temos hotéis fazenda e chalés. Compare os seguintes benefícios antes de sua reserva.</p>        
+          </div>
+        </div>
+        <p><a title="Ler Mais" href="#" class="link-with-icon white">Ler Mais <i class=" icon-chevron-right"></i></a></p>
+      </div>
+    </div>
+  </section>
