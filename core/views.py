@@ -8,7 +8,7 @@ from .models import Pet
 
 def login_user(request):
     data = {}
-    data['title'] = 'Login'
+    data['title'] = request.user
 
     return render(request, 'login.html', data)
 
@@ -39,7 +39,7 @@ def index(request):
 
 def list_all_pets(request):
     data={}
-    data['title'] = 'Todos Anúncios'
+    data['title'] = request.user#'Todos Anúncios'
     data['todos'] = True;
     pets = Pet.objects.filter(active=True)
     data['pets'] = pets
@@ -49,6 +49,7 @@ def list_all_pets(request):
 @login_required(login_url='/login/')
 def list_user_pets(request):
     data={}
+    data['logado'] = True;
     data['title'] = 'Meus Anúncios'
     data['meus'] = True;
     pets = Pet.objects.filter(active=True, user=request.user)
@@ -69,6 +70,7 @@ def pet_detail(request, id):
 @login_required(login_url='/login/')
 def pet_register(request):
     data = {}
+    data['logado'] = True;
     data['title'] = 'Novo Anúncio'
     pet_id = request.GET.get('id')
     if pet_id:

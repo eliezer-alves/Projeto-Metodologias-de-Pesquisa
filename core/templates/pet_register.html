@@ -1,0 +1,83 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    {% include 'menu.html' %}
+    <div class="container-fluid" style="background-color: #FAFAFA;">
+      <div class="row">
+        <div class="col-0 col-sm-1 col-md-2 col-lg-2 col-xl-2" style="background-color: #E6E6E6;"></div>
+        <div class="col-8 col-sm-10 col-md-8 col-lg-8 col-xl-8"  style="background-color: white;padding-left:5%;padding-right:5%;">
+          <br><br><br>
+          <div style="text-align: center;">
+            <h3>Novo Imóvel</h3>
+          </div>
+          <br><br>
+
+          <form method="POST" action="submit" enctype="multipart/form-data">{% csrf_token %}
+
+            <div class="form-row">
+
+                  <input type="number" class="from-control" name="pet_id" value="{{ pet.id }}" hidden>
+
+                  <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" value="{{ pet.email }}">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone:</label><br>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="(35)9999999" value="{{ pet.phone }}">
+                  </div>
+
+
+                  <div class="form-group">
+                    <label for="city">City:</label><br>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City" value="{{ pet.city }}">
+                  </div>
+                  <div class="form-group">
+                    <label for="photo">Photo:</label>
+                    {% if pet %}
+                    <a style="width: 70%;text-align: right;" href="/media/{{ pet.photo }}" target="_blank">Actual Picture</a>
+                    {% endif %}
+                    <input type="file" class="form-control-file" id="photo" name="photo">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="city">Pessoas:</label><br>
+                    <input type="text" class="form-control" id="peoples" name="peoples" placeholder="4" value="{{ pet.peoples }}">
+                  </div>
+                  <div class="form-group">
+                    <label for="city">Preço:</label><br>
+                    <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="R$ XX,xx" value="{{ pet.price }}">
+                  </div>
+                  <div
+                  <div class="form-group">
+                    <label for="city">Quartos:</label><br>
+                    <input type="number" class="form-control" id="bedrooms" name="bedrooms" placeholder="3" value="{{ pet.badrooms }}">
+                  </div>
+                  <div
+                  <div class="form-group">
+                    <label for="city">Banheiros:</label><br>
+                    <input type="number" class="form-control" id="toilets" name="toilets" placeholder="2" value="{{ pet.toilets }}">
+                  </div>
+                  <div
+            </div>
+
+            <div class="form-group">
+              <label for="description">Localização:</label><br>
+              <textarea class="form-control" id="description" name="description" rows="5" placeholder="Rua Xxxxxxx, nº XX, Bairro Centro . . .">{{ pet.description }}</textarea>
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+              {% if pet %} Update
+              {% else %} Save
+              {% endif %}
+            </button>
+            <div class="form-group">
+
+          </form>
+          <br><br><br><br>
+        </div>
+        <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-2" style="background-color: #E6E6E6;"></div>
+      </div>
+    </div>
+
+{% endblock %}
