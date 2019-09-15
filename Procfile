@@ -1,1 +1,1 @@
-web: gunicorn Projeto-Metodologias-de-Pesquisa.wsgi --log-file -
+web: gunicorn djangoproject.wsgi --log-file –
