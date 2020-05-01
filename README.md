@@ -3,5 +3,5 @@
 <p> - Backend em Python utilizando o framework Django</p>
 <p> - Arquivos de mídia hospedados no Cloudinary</p>
 <p> - Controle de vesões Git</p>
-<p> - Hospedado no Heroku</p>
+<p> - Site hospedado no Heroku</p>
 <p>Demo: http://moraki.herokuapp.com/</p>
